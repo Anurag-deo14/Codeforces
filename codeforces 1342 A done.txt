@@ -1,0 +1,39 @@
+
+#include <iostream>  
+using namespace std;
+int main() {
+ long long  int t,x,y,a,b,k,g,l;
+   cin>>t;
+   while(t--){
+   cin>>x>>y>>a>>b;
+   if(x!=y){
+       if(x>y){
+           k=x-y;
+           g=y;
+       }
+       else{
+           k=y-x;
+           g=x;
+       }
+    
+           l=k*a;
+       
+      
+       if((g*b)+l < (x+y)*a){
+           cout<<(g*b)+l<<endl;
+       }
+       else{
+           cout<<(x+y)*a<<endl;
+       }
+   }
+   else{
+       if((x+y)*a<(x)*b){
+           cout<<(x+y)*a<<endl;
+       }
+       else{
+           cout<<(x)*b<<endl;
+       }
+   }
+}
+    return 0;
+}
